@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour {
         {
             if (m_instance == null)
             {
-                m_instance = FindObjectOfType<UIManager>();
+                m_instance = FindObjectOfType<UIManager>(); // Awake에서 할당 안 해줘도 됨
             }
 
             return m_instance;
